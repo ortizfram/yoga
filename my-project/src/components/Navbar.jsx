@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import MobileMenu from "./MobileMenu";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
+  const [active, setActive] = useState(false); //false cause hamburger will be hidden by default
+
+  const showMenu = () => {
+    setActive(!active); //pass default to true
+  };
+
   return (
     <div className="fixed w-full text-white flex justify-between p-4 items-center">
       {/* logo */}
@@ -13,7 +21,11 @@ const Navbar = () => {
 
       {/* nav */}
       <nav>
-        <ul>
+        <div className="absolute right-6 md:hidden top-4">
+          <MenuIcon onClick={showMenu} />
+        </div>
+
+        <ul className="hidden md:flex gap-8 p-6 uppercase  bg-black/30 backdrop-blur-lg">
           <li>
             <Link to="/">Home</Link>
             <Link to="/">Acerca</Link>
@@ -21,6 +33,8 @@ const Navbar = () => {
             <Link to="/">Contacto</Link>
           </li>
         </ul>
+
+        <MobileMenu showMenu={showMenu} active={active} />
       </nav>
     </div>
   );
