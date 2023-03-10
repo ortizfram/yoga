@@ -28,7 +28,7 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-8 p-6 uppercase  bg-black/30 backdrop-blur-lg">
           <li>
             <Link to="/">Inicio</Link>
-            <Link to="/Acerca">Acerca</Link>
+            <Link to="/">Acerca</Link>
             <Link to="/">Talleres</Link>
             <Link to="/">Contacto</Link>
           </li>

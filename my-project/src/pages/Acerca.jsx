@@ -26,7 +26,7 @@ const Acerca = () => {
         </div>
 
         {/* content */}
-        <div className="p-6 flex-row md:flex">
+        <div className="p-6 flex-row md:flex md:text-start md:p-8">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
             consequuntur iusto. Temporibus amet sapiente ea. Lorem ipsum dolor
