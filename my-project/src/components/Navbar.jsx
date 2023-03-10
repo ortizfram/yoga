@@ -21,13 +21,13 @@ const Navbar = () => {
 
       {/* nav */}
       <nav>
-        <div className="absolute right-6 md:hidden top-4">
-          <MenuIcon onClick={showMenu} />
+        <div className="absolute right-7 md:hidden top-6 scale-150">
+          <MenuIcon onClick={showMenu} className="scale-150 cursor-pointer" />
         </div>
 
         <ul className="hidden md:flex gap-8 p-6 uppercase  bg-black/30 backdrop-blur-lg">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/hero">Inicio</Link>
             <Link to="/">Acerca</Link>
             <Link to="/">Talleres</Link>
             <Link to="/">Contacto</Link>

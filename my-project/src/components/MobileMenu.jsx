@@ -12,10 +12,10 @@ const MobileMenu = ({ showMenu, active }) => {
       }
     >
       <li>
-        <CloseIcon onClick={showMenu} />
+        <CloseIcon onClick={showMenu} className="cursor-pointer scale-150" />
       </li>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/">Inicio</Link>
       </li>
       <li>
         <Link to="/">Acerca</Link>
