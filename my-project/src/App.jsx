@@ -2,8 +2,9 @@ import Navbar from "./components/Navbar";
 import Acerca from "./pages/Acerca";
 import Hero from "./pages/Hero";
 import Contact from "./pages/Contact";
+import Slider from "./components/Slider";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Navbar />
@@ -12,6 +13,6 @@ function App() {
       <Contact />
     </div>
   );
-}
+};
 
 export default App;
