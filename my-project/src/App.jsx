@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Acerca from "./pages/Acerca";
 import Hero from "./pages/Hero";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <Acerca />
     </div>
   );
 }

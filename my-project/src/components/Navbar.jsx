@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full text-white flex justify-between p-4 items-center">
       {/* logo */}
-      <div className="text-2xl font-bold text-center uppercase border-2 p-2">
+      <div className="text-2xl font-bold text-center uppercase border-2 p-2 shadow-lg bg-black/20">
         <h1>
           K <span className="block text-4xl">M</span>
         </h1>
